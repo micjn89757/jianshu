@@ -1,0 +1,23 @@
+.topicWrapper {
+  padding: 20px 0 10px 0;
+  margin-left: -10px;
+}
+
+.topicWrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.topicWrapper .topicItem {
+  float: left;
+  margin-left: 18px;
+  height: 32px;
+  line-height: 32px;
+  background: #f7f7f7;
+  font-size: 14px;
+  color: #F58157;
+  font-weight: 600;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+}

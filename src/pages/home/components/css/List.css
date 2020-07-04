@@ -1,0 +1,61 @@
+.listContainer .listItem {
+  padding: 20px 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.listContainer .listItem::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.listContainer .listItem .pic {
+  width: 150px;
+  height: 100px;
+  display: block;
+  float: right;
+}
+
+.listContainer .listItem .listInfo {
+  float: left;
+  width: 475px;
+}
+
+.listContainer .listItem .listInfo h3 {
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.listContainer .listItem .listInfo h3 a {
+  cursor: pointer;
+}
+
+.listContainer .listItem .listInfo h3 a:hover {
+  text-decoration: underline;
+}
+
+.listContainer .listItem .listInfo p {
+  line-height: 24px;
+  font-size: 13px;
+  color: #999999;
+}
+
+.listContainer .loadMore {
+  width: 595px;
+  border-radius: 20px;
+  background-color: #a5a5a5;
+  height: 20px;
+  margin: 30px auto 60px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  line-height: 20px;
+}
+
+.listContainer .loadMore:hover {
+  background-color: #969595;
+}

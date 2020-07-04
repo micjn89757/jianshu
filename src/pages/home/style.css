@@ -1,0 +1,61 @@
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.homeContainer {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+.homeContainer .homeLeft {
+  width: 39.0625rem;
+  margin-left: 0.9375rem;
+  padding-top: 1.875rem;
+  float: left;
+}
+
+.homeContainer .homeLeft .banner-img {
+  width: 625px;
+  height: 270px;
+}
+
+.homeContainer .homeRight {
+  width: 29.16667%;
+  float: right;
+  margin-left: 4.16667%;
+}
+
+.homeContainer .backTop {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.homeContainer .backTop:hover {
+  background-color: rgb(231, 229, 229);
+}
+
+.homeContainer .backTop:hover::after {
+  content: '回到顶部';
+  color: #fff;
+  display: block;
+  position: absolute;
+  left: -65px;
+  top: 13px;
+  background: #333;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0 5px;
+}

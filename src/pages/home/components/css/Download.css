@@ -1,0 +1,36 @@
+.download {
+  margin-bottom: 30px;
+  padding: 10px 22px;
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  background-color: #fff;
+  display: block;
+  box-sizing: border-box;
+}
+
+.download img.pic {
+  width: 60px;
+  height: 60px;
+  opacity: .85;
+  vertical-align: middle;
+}
+
+.download div.info {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 7px;
+  height: 44px;
+}
+
+.download div.info .title {
+  font-size: 15px;
+  color: #333;
+  height: 22.22px;
+}
+
+.download div.info .desc {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #999;
+}

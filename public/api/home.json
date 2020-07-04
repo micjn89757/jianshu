@@ -1,0 +1,93 @@
+{
+  "success":true,
+  "data": {
+    "articleList": [
+      {
+        "id": 1,
+        "title": "秦海璐王新军的婚姻暴露一个真相：彩礼，是检验感情的试金石!",
+        "img": "https://upload-images.jianshu.io/upload_images/6001242-9cb72b210cd31bcf.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "desc": "作者：七七 原创作品，抄袭必究！ /1/ 在后台收到一条读者的私信留言： 我跟我男友交往差不多有四年了，这四年的时间里我因为工作的原因在外面租了..."
+      },
+      {
+        "id": 2,
+        "title": "儿子意外坠楼，央视李瑞英因为敬业，为何被大众批“六亲不认”？",
+        "img": "https://upload-images.jianshu.io/upload_images/2259045-93c1f8eaffea2e8d?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "desc": "文｜西西 编辑｜小麦 每晚七点，伴着熟悉的音乐，央视《新闻联播》准时出现在观众面前。 这个堪称超长待机的节目，一年365天，天天播放。 有人说..."
+      },
+      {
+        "id": 3,
+        "title": "学会营造良好的夫妻关系",
+        "img": "https://upload-images.jianshu.io/upload_images/6882997-250f91f4f6963f20.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "desc": "昨天晚上，老公炒的土豆丝真是成为我味觉记忆里的新的里程碑，也是我用心感受到老公爱的新的开始。原来觉察如此让人开悟，幸福。 老公切的丝细又均匀，味..."
+      },
+      {
+        "id": 4,
+        "title": "北京女孩家里蹲11年，却爆红到国外:“伪上班”,正在慢慢榨干你",
+        "img": "https://upload-images.jianshu.io/upload_images/1202579-ac32a5eee97061b3?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "desc": "01 最近在“一条”上看到了一个北京女孩逆袭的故事。 85后北京女孩殷越，毕业后没去上班，宅在家里11年。 前三年几乎零收入，和大多数年轻人一样..."
+      },
+      {
+        "id": 5,
+        "title": "Andriod防抖音App",
+        "img": "https://upload-images.jianshu.io/upload_images/8669504-3293ef3c6d1d27d3.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "desc": "Github项目仓库 抖音这么火，我就想着要不自己也做一个吧，于是就有了我的自制抖音。喜欢的可以点个star或关注一下，以后会保持维护和优化。 ..."
+      },
+      {
+        "id": 6,
+        "title": "用户画像2:数据指标体系",
+        "img": "https://upload-images.jianshu.io/upload_images/7179125-8fcd23d455bf1bb1.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "desc": "数据指标体系是建立用户画像的基础，也是在进入开发前的关键环节，是需要结合业务场景制定的数据指标。建立用户画像一般从2个维度： ①用户维度（use..."
+      },
+      {
+        "id": 7,
+        "title": "一篇价值百万的产品心经",
+        "img": "https://upload-images.jianshu.io/upload_images/654844-18b641b796791635.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+        "desc": "成为一个产品经理不难，但想要成为一个优秀的产品经理，道阻且长。作为团队的核心，产品经理的职责大到可以用“做产品”这一个词概括，也小到任何一点改动..."
+      }
+    ],
+    "topicList": [
+      {
+        "id": 1,
+        "title": "手绘"
+      },
+      {
+        "id": 2,
+        "title": "社会热点"
+      },
+      {
+        "id": 3,
+        "title": "简书电影"
+      },
+      {
+        "id": 4,
+        "title": "读书"
+      },
+      {
+        "id": 5,
+        "title": "摄影"
+      },
+      {
+        "id": 6,
+        "title": "旅行·在路上"
+      }
+    ],
+    "recommendList": [
+      {
+        "id":1,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
+      },
+      {
+        "id":2,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+      },
+      {
+        "id":3,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+      },
+      {
+        "id":14,
+        "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+.header {
+  position: relative;
+  height: 3.5rem;
+  border-bottom: 0.0625rem solid #f0f0f0;
+}
+
+.logo{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 6.25rem;
+  height: 100%;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* !中间导航部分 */
+nav.clearfix {
+  width: 60rem;
+  height: 100%;
+  margin: 0 auto;
+  padding-right: 70px;
+  box-sizing: border-box;
+}
+
+/* !section元素的样式 */
+section {
+  line-height: 3.5rem;
+  padding: 0 0.9375rem;
+  font-size: 1.0625rem;
+  color: #333;
+}
+
+section.left {
+  float: left;
+}
+
+section.right {
+  float: right;
+  color: #969696;
+}
+
+section.active {
+  color: #ea6f5a;
+}
+
+
+/* !搜索框样式 */
+div.search {
+  float: left;
+  position: relative;
+}
+
+div.search input {
+  color: #777;
+  width: 10rem;
+  height: 2.375rem;
+  border: none;
+  outline: none;
+  border-radius: 1.1875rem;
+  margin-top: 0.5625rem;
+  padding:0 2.1875rem 0 1.25rem;
+  box-sizing: border-box;
+  background: #eee;
+  font-size: 0.875rem;
+  margin-left: 1.25rem;    
+  transition: width .7s ease;
+}
+
+div.search input.focus {
+  width: 15rem;
+}
+
+div.search span.iconfont {
+  position: absolute;
+  right: 0.3125rem;
+  bottom: 0.3125rem;
+  width: 1.875rem;
+  line-height: 1.875rem;
+  border-radius: 0.9375rem;
+  text-align: center;
+  color: #999;
+  cursor: pointer;
+}
+
+div.search span.focus {
+  background-color: #777;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+div.search section.searchInfo {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  width: 15rem;
+  padding: 0 1.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, .2);
+  background: #fff ;
+}
+
+div.search section.searchInfo::before {
+  content: '';
+  position: absolute;
+  left: 2.1875rem;
+  top: -0.8125rem;
+  border-width: 0.4375rem;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent ;
+}
+
+div.search section.searchInfo section.searchInfoTitle {
+  margin-top: 1.25rem;
+  margin-bottom: 0.9375rem;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  color: #969696;
+}
+
+div.search section.searchInfo section.searchInfoTitle span.searchInfoSwitch {
+  float: right;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+div.search section.searchInfo section.searchInfoTitle span.searchInfoSwitch i.spin {
+  display: block;
+  float: left;
+  font-size: 0.75rem;
+  margin-right: 0.125rem;
+  transition: all .4s ease-in;
+  transform-origin: center center;
+}
+
+div.search section.searchInfo .searchInfoList {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+div.search section.searchInfo .searchInfoList .searchInfoItem {
+  line-height: 1.25rem;
+  padding: 0 0.3125rem;
+  font-size: 0.75rem;
+  border: 0.0625rem solid #ddd;
+  color: #787878;
+  border-radius: 0.1875rem;
+  margin-right: 0.625rem;
+  margin-bottom: 0.9375rem;
+}
+
+
+
+/* !注册以及写文章按钮 */
+.addition {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 3.5rem;
+  margin-right: 20px;
+}
+
+.addition button {
+  float: right;
+  line-height: 2.375rem;
+  border-radius: 1.1875rem;
+  margin-top: 0.5625rem;
+  border: 1px solid #ec6149;
+  margin-right: 20px;
+  padding: 0 1.25rem;
+  font-size: 0.875rem;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.addition button.reg {
+  color: #ec6149;
+}
+
+.addition button.writting {
+  color: #fff;
+  background-color: #ec6149;
+}
