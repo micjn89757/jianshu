@@ -3,6 +3,7 @@ import "./style.css"
 import logoPic from "../../assets/logo.png"
 import { connect } from "react-redux"
 import { actionCreators } from "./store"
+import { actionCreators as loginActionCreators } from "../../pages/login/store"
 import { Link } from "react-router-dom"
 
 class Header extends React.Component{
@@ -10,8 +11,9 @@ class Header extends React.Component{
     super(props)
     this.iref = React.createRef()
   }
+
   render() {
-    const { handleInputFocus, handleInputBlur, focused, list} = this.props
+    const { handleInputFocus, handleInputBlur, focused, list, login, logout } = this.props
     return (
       <header className="header">
         <Link className="logo" to="/" style={{
@@ -26,16 +28,20 @@ class Header extends React.Component{
             <span className={focused ? 'focus iconfont' : 'iconfont' }>&#xe617;</span>
             { this.getListArea() }
           </div>
-          <section className="right">登录</section>
+          {
+            login ? <Link onClick={logout} to='/' className="right login">退出</Link> : <Link to='/login' className="right login">登录</Link>
+          }
           <section className="right">
             <span className="iconfont" style={{fontSize: "20px",fontWeight: "600"}}>&#xe636;</span>
           </section>
         </nav>
         <div className="addition">
-          <button className="writting">
-            <span className="iconfont">&#xe708;</span>
-            写文章
-          </button>
+          <Link to="/write">
+            <button className="writting">
+              <span className="iconfont">&#xe708;</span>
+              写文章
+            </button>
+          </Link>
           <button className="reg">注册</button>
         </div>
       </header>
@@ -91,7 +97,8 @@ const mapStateToProps = (state) => {
     list: state.getIn(["header", "list"]),
     page: state.getIn(["header","page"]),
     totalPage: state.getIn(["header", "totalPage"]),
-    mouseIn: state.getIn(["header", "mouseIn"])
+    mouseIn: state.getIn(["header", "mouseIn"]),
+    login: state.getIn(["login", "login"])
   }
 }
 
@@ -129,6 +136,9 @@ const mapDispatchToProps = (dispatch) => {
         dispatch(actionCreators.changePage(1))
       }
       
+    },
+    logout() {
+      dispatch(loginActionCreators.changelogin(false))
     }
   }
 }

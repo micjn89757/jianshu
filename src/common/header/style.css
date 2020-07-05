@@ -29,23 +29,30 @@ nav.clearfix {
 }
 
 /* !section元素的样式 */
-section {
+.header section{
   line-height: 3.5rem;
   padding: 0 0.9375rem;
   font-size: 1.0625rem;
   color: #333;
 }
 
-section.left {
+.header .left {
   float: left;
 }
 
-section.right {
+.header .right {
   float: right;
   color: #969696;
 }
 
-section.active {
+.header a.login {
+  line-height: 3.5rem;
+  padding: 0 0.9375rem;
+  font-size: 1.0625rem;
+  cursor: pointer;
+}
+
+.header .active {
   color: #ea6f5a;
 }
 
@@ -156,7 +163,6 @@ div.search section.searchInfo .searchInfoList .searchInfoItem {
   margin-right: 0.625rem;
   margin-bottom: 0.9375rem;
 }
-
 
 
 /* !注册以及写文章按钮 */

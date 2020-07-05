@@ -1,0 +1,41 @@
+.loginWrapper {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 56px;
+  background: #eee;
+}
+
+.loginWrapper .loginBox {
+  width: 440px;
+  height: 220px;
+  margin: 80px auto;
+  padding-top: 20px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.loginWrapper .loginBox input{
+  display: block;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  margin: 20px auto;
+  padding: 0 10px;
+  color: #777;
+  outline-color: #3194d0;
+}
+
+.loginWrapper .loginBox button {
+  width: 220px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  border: none;
+  background: #3194d0;
+  border-radius: 15px;
+  margin: 10px auto;
+  display: block;
+}
