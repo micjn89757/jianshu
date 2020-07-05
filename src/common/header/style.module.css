@@ -1,15 +1,15 @@
 .header {
   position: relative;
-  height: 3.5rem;
+  height: 56px;
   border-bottom: 0.0625rem solid #f0f0f0;
 }
 
-.logo{
+.header .logo{
   position: absolute;
   display: block;
   top: 0;
   left: 0;
-  width: 6.25rem;
+  width: 100px;
   height: 100%;
 }
 
@@ -20,8 +20,8 @@
 }
 
 /* !中间导航部分 */
-nav.clearfix {
-  width: 60rem;
+.header nav {
+  width: 960px;
   height: 100%;
   margin: 0 auto;
   padding-right: 70px;
@@ -30,9 +30,9 @@ nav.clearfix {
 
 /* !section元素的样式 */
 .header section{
-  line-height: 3.5rem;
-  padding: 0 0.9375rem;
-  font-size: 1.0625rem;
+  line-height: 56px;
+  padding: 0 15px;
+  font-size: 17px;
   color: #333;
 }
 
@@ -45,10 +45,17 @@ nav.clearfix {
   color: #969696;
 }
 
-.header a.login {
-  line-height: 3.5rem;
-  padding: 0 0.9375rem;
-  font-size: 1.0625rem;
+.header .login {
+  line-height: 56px;
+  padding: 0 15px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.header .logout {
+  line-height: 56px;
+  padding: 0 15px;
+  font-size: 17px;
   cursor: pointer;
 }
 
@@ -58,32 +65,36 @@ nav.clearfix {
 
 
 /* !搜索框样式 */
-div.search {
+.header nav .search {
   float: left;
   position: relative;
 }
 
-div.search input {
+.header nav .search input {
   color: #777;
-  width: 10rem;
-  height: 2.375rem;
+  width: 180px;
+  height: 38px;
   border: none;
   outline: none;
-  border-radius: 1.1875rem;
-  margin-top: 0.5625rem;
-  padding:0 2.1875rem 0 1.25rem;
+  border-radius: 19px;
+  margin-top: 9px;
+  padding:0 35px 0 20px;
   box-sizing: border-box;
   background: #eee;
-  font-size: 0.875rem;
-  margin-left: 1.25rem;    
+  font-size: 14px;
+  margin-left: 20px;    
   transition: width .7s ease;
 }
 
-div.search input.focus {
+.header nav .search input.focus {
   width: 15rem;
 }
 
-div.search span.iconfont {
+.header nav .search input::placeholder {
+  color: #999;
+}
+
+.header nav .search .searchIcon {
   position: absolute;
   right: 0.3125rem;
   bottom: 0.3125rem;
@@ -95,16 +106,14 @@ div.search span.iconfont {
   cursor: pointer;
 }
 
-div.search span.focus {
+.header nav .search .searchIcon.focus {
   background-color: #777;
   color: #fff;
 }
 
-input::placeholder {
-  color: #999;
-}
 
-div.search section.searchInfo {
+
+.header nav .search .searchInfo {
   position: absolute;
   top: 3.5rem;
   left: 0;
@@ -114,7 +123,7 @@ div.search section.searchInfo {
   background: #fff ;
 }
 
-div.search section.searchInfo::before {
+.header nav .search .searchInfo::before {
   content: '';
   position: absolute;
   left: 2.1875rem;
@@ -124,7 +133,7 @@ div.search section.searchInfo::before {
   border-color: transparent transparent #fff transparent ;
 }
 
-div.search section.searchInfo section.searchInfoTitle {
+.header nav .search .searchInfo .searchInfoTitle {
   margin-top: 1.25rem;
   margin-bottom: 0.9375rem;
   line-height: 1.25rem;
@@ -132,13 +141,13 @@ div.search section.searchInfo section.searchInfoTitle {
   color: #969696;
 }
 
-div.search section.searchInfo section.searchInfoTitle span.searchInfoSwitch {
+.header nav .search .searchInfo .searchInfoTitle .searchInfoSwitch {
   float: right;
   font-size: 0.75rem;
   cursor: pointer;
 }
 
-div.search section.searchInfo section.searchInfoTitle span.searchInfoSwitch i.spin {
+.header nav .search .searchInfo .searchInfoTitle .searchInfoSwitch .spin {
   display: block;
   float: left;
   font-size: 0.75rem;
@@ -147,13 +156,13 @@ div.search section.searchInfo section.searchInfoTitle span.searchInfoSwitch i.sp
   transform-origin: center center;
 }
 
-div.search section.searchInfo .searchInfoList {
+.header nav .search .searchInfo .searchInfoList {
   display: flex;
   flex-wrap: wrap;
   padding-left: 15px;
 }
 
-div.search section.searchInfo .searchInfoList .searchInfoItem {
+.header nav .search .searchInfo .searchInfoList .searchInfoItem {
   line-height: 1.25rem;
   padding: 0 0.3125rem;
   font-size: 0.75rem;
@@ -166,7 +175,7 @@ div.search section.searchInfo .searchInfoList .searchInfoItem {
 
 
 /* !注册以及写文章按钮 */
-.addition {
+.header .addition {
   position: absolute;
   right: 0;
   top: 0;
@@ -174,7 +183,7 @@ div.search section.searchInfo .searchInfoList .searchInfoItem {
   margin-right: 20px;
 }
 
-.addition button {
+.header .addition button {
   float: right;
   line-height: 2.375rem;
   border-radius: 1.1875rem;
@@ -188,11 +197,11 @@ div.search section.searchInfo .searchInfoList .searchInfoItem {
   cursor: pointer;
 }
 
-.addition button.reg {
+.header .addition .reg {
   color: #ec6149;
 }
 
-.addition button.writting {
+.header .addition .writting {
   color: #fff;
   background-color: #ec6149;
 }

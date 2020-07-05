@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css"
+import styles from "./style.module.css"
 import logoPic from "../../assets/logo.png"
 import { connect } from "react-redux"
 import { actionCreators } from "./store"
@@ -15,34 +15,36 @@ class Header extends React.Component{
   render() {
     const { handleInputFocus, handleInputBlur, focused, list, login, logout } = this.props
     return (
-      <header className="header">
-        <Link className="logo" to="/" style={{
+      <header className={styles.header}>
+        <Link className={styles.logo} to="/" style={{
           background: `url(${logoPic})`,
           backgroundSize: "cover"
         }}> </Link>
-        <nav className="clearfix">
-          <section className="left active">首页</section>
-          <section className="left">下载App</section>
-          <div className="search">
-            <input onFocus={() => {handleInputFocus(list)}} onBlur={handleInputBlur} className={this.props.focused ? 'focus' : '' } placeholder="搜索"/>
-            <span className={focused ? 'focus iconfont' : 'iconfont' }>&#xe617;</span>
+        <nav className={styles.clearfix}>
+          <section className={styles.left+' '+ styles.active}>首页</section>
+          <section className={styles.left}>下载App</section>
+          <div className={styles.search}>
+            <input onFocus={() => {handleInputFocus(list)}} onBlur={handleInputBlur} className={this.props.focused ? styles.focus : '' } placeholder="搜索"/>
+            <span className={focused ? `${styles.focus} ${styles.searchIcon} iconfont` : `${styles.searchIcon} iconfont` }>&#xe617;</span>
             { this.getListArea() }
           </div>
+
           {
-            login ? <Link onClick={logout} to='/' className="right login">退出</Link> : <Link to='/login' className="right login">登录</Link>
+            login ? <Link onClick={logout} to='/' className={styles.right + ' '+ styles.logout}>退出</Link> : <Link to='/login' className={styles.right + ' '+ styles.login}>登录</Link>
           }
-          <section className="right">
+
+          <section className={styles.right}>
             <span className="iconfont" style={{fontSize: "20px",fontWeight: "600"}}>&#xe636;</span>
           </section>
         </nav>
-        <div className="addition">
+        <div className={styles.addition}>
           <Link to="/write">
-            <button className="writting">
+            <button className={styles.writting}>
               <span className="iconfont">&#xe708;</span>
               写文章
             </button>
           </Link>
-          <button className="reg">注册</button>
+          <button className={styles.reg}>注册</button>
         </div>
       </header>
     )
@@ -56,7 +58,7 @@ class Header extends React.Component{
     if (newList.length) {
       for (let index = (page-1) * 10; index < page * 10; index++) {
         pageList.push(
-          <li key={newList[index]} className="searchInfoItem">
+          <li key={newList[index]} className={styles.searchInfoItem}>
               <a href="/">{newList[index]}</a>
           </li>
         )     
@@ -66,15 +68,15 @@ class Header extends React.Component{
 
     if (focused || mouseIn) {
       return (
-        <section className="searchInfo" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <section className="searchInfoTitle">
+        <section className={styles.searchInfo} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <section className={styles.searchInfoTitle}>
             热门搜索
-            <span className="searchInfoSwitch" onClick={() => {handleChangePage(page,totalPage,this.iref.current)}}>
-              <i ref={this.iref} className="iconfont spin">&#xe851;</i>
+            <span className={styles.searchInfoSwitch} onClick={() => {handleChangePage(page,totalPage,this.iref.current)}}>
+              <i ref={this.iref} className={`iconfont ${styles.spin}`}>&#xe851;</i>
               换一批
             </span>
           </section>
-          <ul className="searchInfoList">
+          <ul className={styles.searchInfoList}>
             {
               pageList
             }  
