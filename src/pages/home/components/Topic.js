@@ -1,15 +1,15 @@
 import React, { memo } from 'react';
-import "./css/Topic.css"
+import styles from "./css/Topic.module.css"
 import { connect } from "react-redux"
 
 function Topic(props) {
   const { list } = props
   return (
-    <div className="topicWrapper">
+    <div className={styles.topicWrapper}>
       {
         list.map((item) => {
           return (
-            <section key = {item.get("id")} className="topicItem">
+            <section key = {item.get("id")} className={styles.topicItem}>
               {item.get("title")}
             </section>
           )

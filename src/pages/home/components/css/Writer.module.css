@@ -1,0 +1,107 @@
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.writerWrapper {
+  width: 278px;
+  border-radius: 3px;
+  height: 300px;
+  position: relative;
+}
+
+.writerWrapper span {
+  font-size: 14px;
+  color: #969696;
+  text-align: left;
+}
+
+.writerWrapper a.pageChange {
+  float: right;
+  display: block;
+  font-size: 14px;
+  color: #969696;
+}
+
+.writerWrapper a.pageChange .spin {
+  transform-origin: center center;
+  transition: all .5s ease;
+  display: block;
+  float: left;
+}
+
+.writerWrapper .writerList {
+  margin: 0 0 20px;
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+
+.writerWrapper .writerList li {
+  margin-top: 15px;
+  line-height: 20px;
+}
+
+.writerWrapper .writerList .avatar {
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.writerWrapper .writerList .avatar img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.writerWrapper .writerList .follow {
+  float: right;
+  margin-top: 5px;
+  padding: 0;
+  font-size: 13px;
+  color: #42c02e;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.writerWrapper .writerList .follow .icFollow {
+  width: inherit;
+  height: inherit;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 1px;
+}
+
+.writerWrapper .writerList .name {
+  padding-top: 5px;
+  margin-right: 60px;
+  font-size: 14px;
+  display: block;
+  color: #333;
+}
+
+.writerWrapper .writerList p{
+  margin: 2px 0 10px;
+  font-size: 12px;
+  color: #969696;
+}
+
+.writerWrapper .findMore {
+  position: absolute;
+  padding: 7px 7px 7px 12px;
+  left: 0;
+  width: 100%;
+  font-size: 13px;
+  color: #787878;
+  background-color: #f7f7f7;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  text-align: center;
+}

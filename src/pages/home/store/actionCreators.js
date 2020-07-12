@@ -17,6 +17,14 @@ const addHomeArticleList = (data, nextPage) => {
   }
 }
 
+export const changeWriterPage = (page) => {
+  console.log(page);
+  return {
+    type: actionTypes.CHANGE_WRITER_LIST,
+    page
+  }
+}
+
 export const getHomeData = () => {
   return (dispatch) => {
     axios.get("/api/home.json")

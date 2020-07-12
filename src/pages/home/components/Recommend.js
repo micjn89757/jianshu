@@ -1,15 +1,15 @@
 import React, { memo } from 'react';
-import "./css/Recommend.css"
+import styles from "./css/Recommend.module.css"
 import { connect } from "react-redux"
 
 
 function Recommend(props) {
   const { list } = props
   return (
-    <div className="recommendWrapper">       
+    <div className={styles.recommendWrapper}>       
       {
         list.map((item) => {
-          return <img className="recommendItem" src={item.get("imgUrl")} key={item.get("id")} alt={item.get("id")} />
+          return <img className={styles.recommendItem} src={item.get("imgUrl")} key={item.get("id")} alt={item.get("id")} />
         })
       }    
     </div>

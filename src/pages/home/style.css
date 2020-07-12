@@ -7,6 +7,10 @@
 .homeContainer {
   width: 960px;
   margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .homeContainer .homeLeft {
@@ -19,12 +23,14 @@
 .homeContainer .homeLeft .banner-img {
   width: 625px;
   height: 270px;
+  border-radius: 6px;
 }
 
 .homeContainer .homeRight {
   width: 29.16667%;
   float: right;
   margin-left: 4.16667%;
+  padding-top: 30px;
 }
 
 .homeContainer .backTop {

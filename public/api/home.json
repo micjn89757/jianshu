@@ -88,6 +88,78 @@
         "id":14,
         "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
       }
+    ],
+    "writerList": [
+      {
+        "id": 1,
+        "name": "董克平日记",
+        "img": "https://upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "words": 1029.4,
+        "like": 4.2
+      },
+      {
+        "id": 2,
+        "name": "没文化的野狐狸",
+        "img": "https://upload.jianshu.io/users/upload_avatars/6652326/ba6106f4-20eb-4735-885d-561083bd4e55.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "words": 299.2,
+        "like": 6.1
+      },
+      {
+        "id": 3,
+        "name": "Hobbit霍比特人",
+        "img": "https://upload.jianshu.io/users/upload_avatars/7133325/f4370cf6-cf4d-4839-9b54-87beaa767d48?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "words": 349.1,
+        "like": 1.2
+      },
+      {
+        "id": 4,
+        "name": "吴晓布",
+        "img": "https://upload.jianshu.io/users/upload_avatars/3343569/6940ee65-036f-4b7a-9935-5915d9b67d14.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "words": 806.8,
+        "like": 25
+      },
+      {
+        "id": 5,
+        "name": "卢璐说",
+        "img": "https://upload.jianshu.io/users/upload_avatars/301940/189d69dd-af7c-4290-9e2c-89e98acf3603.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "words": 1776.9,
+        "like": 32.8
+      },
+      {
+        "id": 6,
+        "name": "董日记",
+        "img": "https://upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "words": 1029.4,
+        "like": 4.2
+      },
+      {
+        "id": 7,
+        "name": "没文化的野狐狸",
+        "img": "https://upload.jianshu.io/users/upload_avatars/6652326/ba6106f4-20eb-4735-885d-561083bd4e55.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "words": 299.2,
+        "like": 6.1
+      },
+      {
+        "id": 8,
+        "name": "Hobbit霍比特人",
+        "img": "https://upload.jianshu.io/users/upload_avatars/7133325/f4370cf6-cf4d-4839-9b54-87beaa767d48?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "words": 349.1,
+        "like": 1.2
+      },
+      {
+        "id": 9,
+        "name": "吴晓布",
+        "img": "https://upload.jianshu.io/users/upload_avatars/3343569/6940ee65-036f-4b7a-9935-5915d9b67d14.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "words": 806.8,
+        "like": 25
+      },
+      {
+        "id": 10,
+        "name": "卢璐说",
+        "img": "https://upload.jianshu.io/users/upload_avatars/301940/189d69dd-af7c-4290-9e2c-89e98acf3603.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
+        "words": 1776.9,
+        "like": 32.8
+      }
     ]
   }
 }

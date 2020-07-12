@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import "./css/List.css"
+import styles from "./css/List.module.css"
 import { connect } from "react-redux"
 import { actionCreators } from "../store"
 import { Link } from "react-router-dom"
@@ -7,13 +7,13 @@ import { Link } from "react-router-dom"
 function List(props) {
   const { list, getMoreList, page } = props
   return (
-    <div className="listContainer">       
+    <div className={styles.listContainer}>       
       {
         list.map((item, index) => {
           return (
-            <div key={ index } className="listItem">
-              <img className="pic" src={item.get("img")} alt="120" />
-              <article className="listInfo">
+            <div key={ index } className={styles.listItem}>
+              <img className={styles.pic} src={item.get("img")} alt="120" />
+              <article className={styles.listInfo}>
                 <h3>
                   <Link to={`/detail/${item.get("id")}`}>{item.get("title")}</Link>
                 </h3>
@@ -23,7 +23,7 @@ function List(props) {
           )
         })
       }
-      <a className="loadMore" onClick={(e) => { getMoreList(page, e)}} href="/">阅读更多</a>
+      <a className={styles.loadMore} onClick={(e) => { getMoreList(page, e)}} href="/">阅读更多</a>
     </div>
   );
 }

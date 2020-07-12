@@ -1,15 +1,29 @@
-.header {
-  position: relative;
+.container {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+  min-height: 50px;
+  margin-bottom: 20px;
   height: 56px;
-  border-bottom: 0.0625rem solid #f0f0f0;
 }
 
-.header .logo{
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100px;
+.container .header {
+  margin: 0 auto;
+  min-width: 768px;
+  max-width: 1440px;
+}
+
+.container .header .logo{
+  float: left;
+  height: 56px;
+  padding: 0;
+}
+
+.container .header .logo img {
   height: 100%;
 }
 
@@ -20,13 +34,24 @@
 }
 
 /* !中间导航部分 */
-.header nav {
-  width: 960px;
+.container .header nav {  
   height: 100%;
   margin: 0 auto;
-  padding-right: 70px;
-  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
+@media (min-width: 768px){
+  .container .header nav {
+    width: 750px;
+  }
+}
+@media (min-width: 992px){
+  .container .header nav {
+    width: 960px;
+  }
+}
+
 
 /* !section元素的样式 */
 .header section{
@@ -175,33 +200,45 @@
 
 
 /* !注册以及写文章按钮 */
-.header .addition {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 3.5rem;
-  margin-right: 20px;
-}
-
-.header .addition button {
-  float: right;
-  line-height: 2.375rem;
-  border-radius: 1.1875rem;
-  margin-top: 0.5625rem;
-  border: 1px solid #ec6149;
-  margin-right: 20px;
-  padding: 0 1.25rem;
-  font-size: 0.875rem;
-  background-color: #fff;
-  outline: none;
+.container .header  .btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
   cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px;
 }
 
-.header .addition .reg {
-  color: #ec6149;
+.container .header .reg {
+  float: right;
+  width: 80px;
+  height: 38px;
+  line-height: 24px;
+  margin: 9px 5px 0 15px;
+  border: 1px solid rgba(236,97,73,.7);
+  border-radius: 20px;
+  font-size: 15px;
+  color: #ea6f5a;
+  background-color: transparent;
+  box-sizing: border-box;
 }
 
-.header .addition .writting {
+.container .header  .writting {
+  float: right;
+  width: 100px;
+  height: 40px;
+  line-height: 24px;
+  margin: 8px 12px 0;
+  border-radius: 20px;
+  font-size: 15px;
   color: #fff;
-  background-color: #ec6149;
+  background-color: #ea6f5a;
+  box-sizing: border-box;
 }

@@ -15,38 +15,35 @@ class Header extends React.Component{
   render() {
     const { handleInputFocus, handleInputBlur, focused, list, login, logout } = this.props
     return (
-      <header className={styles.header}>
-        <Link className={styles.logo} to="/" style={{
-          background: `url(${logoPic})`,
-          backgroundSize: "cover"
-        }}> </Link>
-        <nav className={styles.clearfix}>
-          <section className={styles.left+' '+ styles.active}>首页</section>
-          <section className={styles.left}>下载App</section>
-          <div className={styles.search}>
-            <input onFocus={() => {handleInputFocus(list)}} onBlur={handleInputBlur} className={this.props.focused ? styles.focus : '' } placeholder="搜索"/>
-            <span className={focused ? `${styles.focus} ${styles.searchIcon} iconfont` : `${styles.searchIcon} iconfont` }>&#xe617;</span>
-            { this.getListArea() }
-          </div>
-
-          {
-            login ? <Link onClick={logout} to='/' className={styles.right + ' '+ styles.logout}>退出</Link> : <Link to='/login' className={styles.right + ' '+ styles.login}>登录</Link>
-          }
-
-          <section className={styles.right}>
-            <span className="iconfont" style={{fontSize: "20px",fontWeight: "600"}}>&#xe636;</span>
-          </section>
-        </nav>
-        <div className={styles.addition}>
-          <Link to="/write">
-            <button className={styles.writting}>
+      <nav className={styles.container}>
+        <header className={`${styles.header} ${styles.clearfix}`}>
+          <Link className={styles.logo} to="/">
+            <img src={logoPic} alt='' />
+          </Link>
+          <Link to="/write" className={`${styles.writting} ${styles.btn}`}>
               <span className="iconfont">&#xe708;</span>
               写文章
-            </button>
           </Link>
-          <button className={styles.reg}>注册</button>
-        </div>
-      </header>
+          <Link to="/reg" className={`${styles.reg} ${styles.btn}`}>注册</Link>
+          <nav>
+            <section className={styles.left+' '+ styles.active}>首页</section>
+            <section className={styles.left}>下载App</section>
+            <div className={styles.search}>
+              <input onFocus={() => {handleInputFocus(list)}} onBlur={handleInputBlur} className={this.props.focused ? styles.focus : '' } placeholder="搜索"/>
+              <span className={focused ? `${styles.focus} ${styles.searchIcon} iconfont` : `${styles.searchIcon} iconfont` }>&#xe617;</span>
+              { this.getListArea() }
+            </div>
+
+            {
+              login ? <Link onClick={logout} to='/' className={styles.right + ' '+ styles.logout}>退出</Link> : <Link to='/login' className={styles.right + ' '+ styles.login}>登录</Link>
+            }
+
+            <section className={styles.right}>
+              <span className="iconfont" style={{fontSize: "20px",fontWeight: "600"}}>&#xe636;</span>
+            </section>
+          </nav>
+        </header>
+      </nav>
     )
   }
 
@@ -130,8 +127,6 @@ const mapDispatchToProps = (dispatch) => {
       }
       
       spin.style.transform = `rotate(${originAngle+360}deg)`
-
-      console.log(originAngle);
       if (page < totalPage) {
         dispatch(actionCreators.changePage(page + 1))
       }else {
