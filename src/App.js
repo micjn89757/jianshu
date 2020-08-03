@@ -1,25 +1,43 @@
 import React, { Component } from 'react';
-import Header from "./common/header"
 import { Provider } from "react-redux"
 import store from "./store"
 import { BrowserRouter, Route } from "react-router-dom"
-import Home from "./pages/home"
-import Detail from "./pages/detail/loadable"
-import Login from "./pages/login"
-import Writer from "./pages/writer"
+
+// pc页面
+import Header from "./pc/common/header"
+import Home from "./pc/pages/home"
+import Detail from "./pc/pages/detail/loadable"
+import Login from "./pc/pages/login"
+import Writer from "./pc/pages/writer"
+
+// 移动端页面
+import PHeader from "./phone/common/header"
+import PHome from "./phone/pages/home"
 
 class App extends Component {
   render() { 
+    const {isPhone} = this.props
     return (
-        <Provider store={store}>         
-          <BrowserRouter>
-            <Header />
-            <Route path="/" exact component={Home}></Route>
-            <Route path="/login" exact component={Login}></Route>
-            <Route path="/write" exact component={Writer}></Route>
-            <Route path="/detail/:id" exact component={Detail}></Route>
-          </BrowserRouter>
-        </Provider>
+      <Provider store={store}>         
+        <BrowserRouter>
+          {
+            isPhone? (
+              <>
+                <PHeader />
+                <Route path="/" exact component={PHome}></Route> 
+              </>
+            ) : (
+              <>
+                <Header />
+                <Route path="/" exact component={Home}></Route>
+                <Route path="/login" exact component={Login}></Route>
+                <Route path="/write" exact component={Writer}></Route>
+                <Route path="/detail/:id" exact component={Detail}></Route>
+              </>             
+            )
+          }
+        </BrowserRouter>
+      </Provider>
     );
   }
 }

@@ -1,0 +1,52 @@
+.header {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  height: 3rem;
+  padding: 3px 18px;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.header .logoWrap {
+  height: 100%;
+  float: left;
+}
+
+.header .logoWrap img.logo {
+  height: 100%;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.header .logoWrap span.slogan {
+  line-height: 20px;
+  vertical-align: middle;
+  margin-left: 12px;
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+}
+
+.header .download{
+  position: absolute;
+  padding: 8px 15px;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  color: #ea6f5a;
+}
+
+.header .download button {
+  color: #fff;
+  background-color: #ea6f5a;
+  width: 92px;
+  height: 32px;
+  border-radius: 16px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}

@@ -198,6 +198,17 @@
   margin-bottom: 0.9375rem;
 }
 
+/* Aa部分样式 */
+.header nav section.aa span{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 854px) {
+  .header nav section.aa span{
+    display: none;
+  }
+}
 
 /* !注册以及写文章按钮 */
 .container .header  .btn {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./style.module.css"
-import logoPic from "../../assets/logo.png"
+import logoPic from "../../../assets/logo.png"
 import { connect } from "react-redux"
 import { actionCreators } from "./store"
 import { actionCreators as loginActionCreators } from "../../pages/login/store"
@@ -38,8 +38,8 @@ class Header extends React.Component{
               login ? <Link onClick={logout} to='/' className={styles.right + ' '+ styles.logout}>退出</Link> : <Link to='/login' className={styles.right + ' '+ styles.login}>登录</Link>
             }
 
-            <section className={styles.right}>
-              <span className="iconfont" style={{fontSize: "20px",fontWeight: "600"}}>&#xe636;</span>
+            <section className={`${styles.right} ${styles.aa}`}>
+              <span className="iconfont">&#xe636;</span>
             </section>
           </nav>
         </header>
